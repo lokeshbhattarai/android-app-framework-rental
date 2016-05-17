@@ -1,1 +1,1 @@
-include ':app', ':rentalframework'
+include ':app', ':rentalframework',':apiconnector'
