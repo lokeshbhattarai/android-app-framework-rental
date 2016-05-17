@@ -27,7 +27,7 @@ public abstract class AcheckoutProcessor extends AppCompatActivity implements IC
 
 
     // display ui with checkout item and price
-    public abstract boolean confirmCheckout(double price);
+    public abstract Transaction confirmCheckout(double totalPriceofTransaction);
 
 
     //make payments and all and return true to generate bill

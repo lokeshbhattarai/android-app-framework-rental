@@ -2,6 +2,7 @@ package project.asd.rentalframework.checkin;
 
 import java.util.Date;
 import java.util.List;
+import java.util.Locale;
 
 /**
  * Created by lokex on 5/17/16.
@@ -14,6 +15,7 @@ public class Transaction {
 
     public Transaction(List<AbstractProduct> checkedOutItems){
         this.checkedOutItems = checkedOutItems;
+        checkedOutDate = new Date();
     }
 
     public List<AbstractProduct> getCheckedOutItems() {
