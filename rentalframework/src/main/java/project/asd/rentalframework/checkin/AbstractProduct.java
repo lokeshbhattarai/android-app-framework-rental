@@ -7,6 +7,15 @@ import java.util.Date;
  * respresents the items that can be checkedout
  */
 public abstract class AbstractProduct {
+    boolean isAvailable;
+
+    public void setAvailable(boolean isAvailable){
+        this.isAvailable = isAvailable;
+    }
+
+    public boolean isAvailable(){
+        return isAvailable;
+    }
 
     //return price for this product
     public abstract double getPrice();

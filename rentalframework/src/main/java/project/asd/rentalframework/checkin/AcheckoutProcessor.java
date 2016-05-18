@@ -9,19 +9,14 @@ import java.util.List;
  */
 public abstract class AcheckoutProcessor extends AppCompatActivity implements ICartPriceObserver{
 
-
-    public final void proceedCheckout(){
-
-        List<AbstractProduct> abstractProducts = getItemsForCheckout();
-        double amount = calculatePrice(abstractProducts);
+    public final void proceedCheckout(Transaction transaction){
+    //    List<AbstractProduct> abstractProducts = setItemsForCheckout();
+        double amount = calculatePrice(transaction.getCheckedOutItems());
         confirmCheckout(amount);
     }
 
-
     //display ui for product selection and return the selected ones
-    public abstract List<AbstractProduct> getItemsForCheckout();
-
-
+ //   public abstract List<AbstractProduct> setItemsForCheckout();
 
     public abstract double calculatePrice(List<AbstractProduct> abstractProducts);
 
@@ -29,11 +24,11 @@ public abstract class AcheckoutProcessor extends AppCompatActivity implements IC
     // display ui with checkout item and price
     public abstract Transaction confirmCheckout(double totalPriceofTransaction);
 
-
     //make payments and all and return true to generate bill
     public abstract boolean checkout(List<AbstractProduct> abstractProducts);
 
-    public abstract void printBill(boolean shouldGenerateBill);
+    public abstract void returnPayment();
 
+    public abstract void printBill(boolean shouldGenerateBill);
 
 }

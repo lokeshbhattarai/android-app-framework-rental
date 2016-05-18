@@ -14,6 +14,12 @@ public class ItemCheckoutState implements  ItemState{
     }
 
     @Override
+    public void proceed() {
+        product.setAvailable(false);
+    }
+
+    /*
+    @Override
     public boolean checkout() {
         Log.d("","Item already checked out can not checkout now");
         return false;
@@ -24,5 +30,5 @@ public class ItemCheckoutState implements  ItemState{
         product.setCurrentState(product.getAvailableState());
         return true;//settled successfully
 
-    }
+    }*/
 }

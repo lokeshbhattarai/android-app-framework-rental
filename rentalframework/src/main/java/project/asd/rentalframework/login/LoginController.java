@@ -17,9 +17,9 @@ public class LoginController {
         this.password = password;
     }
 
-    public IRole isValidUser(){
+    public boolean isValidUser(){
         IUser users = DBHelper.getUser(username);
-        if(users.getPassword() == password) return users.getRole();
-        return null;
+        if(users.getPassword() == password) return true;
+        return false;
     }
 }
