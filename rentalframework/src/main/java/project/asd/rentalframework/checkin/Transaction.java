@@ -14,11 +14,13 @@ public class Transaction {
     private UUID id;
     private List<AbstractProduct> checkedOutItems;
     private Date checkedOutDate;
+    private ICustomer customer;
 
-    public Transaction(List<AbstractProduct> checkedOutItems){
+    public Transaction(List<AbstractProduct> checkedOutItems, ICustomer customer){
         id = UUID.randomUUID();
         this.checkedOutItems = checkedOutItems;
         checkedOutDate = new Date();
+        this.customer = customer;
     }
 
     public UUID getTransactionId(){
