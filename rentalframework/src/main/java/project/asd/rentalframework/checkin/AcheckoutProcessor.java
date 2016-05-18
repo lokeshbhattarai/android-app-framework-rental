@@ -33,6 +33,7 @@ public abstract class AcheckoutProcessor extends AppCompatActivity implements IC
     //make payments and all and return true to generate bill
     public abstract boolean checkout();
 
+    //For canceling for Booking/ order
     public abstract void returnPayment();
 
     public abstract void printBill(boolean shouldGenerateBill);
