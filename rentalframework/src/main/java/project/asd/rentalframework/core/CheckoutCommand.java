@@ -10,9 +10,11 @@ public class CheckoutCommand implements ICommand {
 
     private Transaction transaction;
     private List<AbstractProduct> products;
+    private ICustomer customer;
 
-    public CheckoutCommand(List<AbstractProduct> products){
+    public CheckoutCommand(ICustomer customer, List<AbstractProduct> products){
         this.products = products;
+        this.customer = customer;
     }
 
     public UUID getTransactionId(){
@@ -21,7 +23,7 @@ public class CheckoutCommand implements ICommand {
     }
     @Override
     public void execute() {
-        transaction = new Transaction(products);
+        transaction = new Transaction(products, customer);
     }
 
     @Override
