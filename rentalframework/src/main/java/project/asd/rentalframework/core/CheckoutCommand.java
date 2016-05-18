@@ -1,4 +1,4 @@
-package project.asd.rentalframework.checkin;
+package project.asd.rentalframework.core;
 
 import java.util.List;
 import java.util.UUID;

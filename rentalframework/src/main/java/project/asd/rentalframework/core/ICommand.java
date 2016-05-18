@@ -1,4 +1,4 @@
-package project.asd.rentalframework.checkin;
+package project.asd.rentalframework.core;
 
 /**
  * Created by Audi on 5/18/2016.

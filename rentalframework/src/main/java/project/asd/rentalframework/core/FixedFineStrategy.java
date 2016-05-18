@@ -1,4 +1,4 @@
-package project.asd.rentalframework.checkin;
+package project.asd.rentalframework.core;
 
 /**
  * Created by lokex on 5/17/16.

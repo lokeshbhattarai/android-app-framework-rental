@@ -1,11 +1,10 @@
-package project.asd.rentalframework.checkin;
+package project.asd.rentalframework.core;
 
 import android.support.v7.app.AppCompatActivity;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 /**
  * Created by lokex on 5/17/16.

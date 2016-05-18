@@ -1,6 +1,4 @@
-package project.asd.rentalframework.checkin;
-
-import android.util.Log;
+package project.asd.rentalframework.core;
 
 /**
  * Created by lokex on 5/17/16.

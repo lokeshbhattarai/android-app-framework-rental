@@ -1,8 +1,7 @@
-package project.asd.rentalframework.checkin;
+package project.asd.rentalframework.core;
 
 import java.util.Date;
 import java.util.List;
-import java.util.Locale;
 import java.util.UUID;
 
 /**
