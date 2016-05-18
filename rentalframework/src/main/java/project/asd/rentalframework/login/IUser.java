@@ -6,5 +6,4 @@ package project.asd.rentalframework.login;
 public interface IUser {
     public String getUsername();
     public String getPassword();
-    public IRole getRole();
 }

@@ -18,7 +18,7 @@ public abstract class ASettleProcessor extends AppCompatActivity{
 
         List<AbstractProduct> items = transaction.getCheckedOutItems();
         for (AbstractProduct item:items) {
-            AbstractFineStrategy strategy = item.getFineStrategy(transaction.checkedOutDate);
+            AbstractFineStrategy strategy = item.getFineStrategy(transaction.getCheckoutDate());
 
             HashMap<AbstractProduct, Double> map =new HashMap<AbstractProduct, Double>();
             if(strategy!=null) {

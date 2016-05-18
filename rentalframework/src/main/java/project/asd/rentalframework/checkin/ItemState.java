@@ -9,7 +9,8 @@ package project.asd.rentalframework.checkin;
 public interface ItemState {
    // CHECKED_OUT,,AVAILABLE;
 
-    public boolean checkout();
-
-    public boolean settle();
+ //   public void checkout();
+ //   public void settle();
+ //   public void cancel();
+    public void proceed();
 }
