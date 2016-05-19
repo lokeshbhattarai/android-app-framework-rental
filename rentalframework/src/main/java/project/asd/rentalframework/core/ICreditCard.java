@@ -12,7 +12,7 @@ public interface ICreditCard {
 
     public Date getExpiredDate();
 
-    public CreditCardType creditCardType();
+    public CreditCardType getCreditCardType();
 
     public Long getBalance();
 
