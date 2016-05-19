@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/TitleTextStyle"
+        android:padding="10dp"
+        android:background="@drawable/white_corner_round_bg"
+        android:text="Selected Product"/>
+
+    <!--Include Product Details -->
+    <include layout="@layout/item_product_details"/>
+
+    <com.asd.framework.utils.HorizontalListView
+        android:id="@+id/selectedProductList"
+        android:layout_width="480dp"
+        android:layout_height="175dp"
+        android:layout_margin="@dimen/small_margin"
+        />
+
+</LinearLayout>

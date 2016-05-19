@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/layoutContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <RelativeLayout
+            android:id="@+id/layoutCheckout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:padding="@dimen/small_margin">
+
+            <ImageView
+                android:id="@+id/iconCheckout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_find_route" />
+
+            <TextView
+                style="@style/TitleTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iconCheckout"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/small_margin"
+                android:text="Rent Car"
+                android:textColor="@color/colorAccent" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layoutSettlement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:padding="@dimen/small_margin">
+
+            <ImageView
+                android:id="@+id/iconSettle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_reports" />
+
+            <TextView
+                style="@style/TitleTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iconSettle"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/small_margin"
+                android:text="Settle Business"
+                android:textColor="@color/colorAccent" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutDeveloper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="@dimen/small_margin"
+        android:orientation="vertical"
+        android:background="@drawable/white_corner_round_bg">
+
+        <TextView
+            style="@style/TitleTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iconSettle"
+            android:gravity="center_vertical"
+            android:padding="@dimen/small_margin"
+            android:text="Project Developer Team"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorAccent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/fab_margin">
+
+            <TextView
+                style="@style/TitleTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Indra Sapkota"
+                android:layout_marginTop="@dimen/small_margin"/>
+            <TextView
+                style="@style/SubtitleTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="indra.sapkota2010@gmail.com" />
+
+
+            <TextView
+                style="@style/TitleTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small_margin"
+                android:text="Lokesh Bhattrai" />
+            <TextView
+                style="@style/SubtitleTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="lokesh.bhattrai@gmail.com" />
+
+
+            <TextView
+                style="@style/TitleTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small_margin"
+                android:text="Ngoc Nguyen" />
+            <TextView
+                style="@style/SubtitleTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="nbngoc84@gmail.com" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
