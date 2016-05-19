@@ -49,8 +49,6 @@ public class ProductCheckoutActivity extends AcheckoutProcessor implements DateP
                 new Date(), new ItemAvailableState(null));
         productList.add(product);
 
-//        getSupportActionBar().setTitle(SELECTED_PRODUCT.getTitle());
-//        getSupportActionBar().setSubtitle(SELECTED_PRODUCT.getSubTitle());
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
@@ -73,6 +71,8 @@ public class ProductCheckoutActivity extends AcheckoutProcessor implements DateP
                         now.get(Calendar.DAY_OF_MONTH)
                 );
                 dpd.show(getFragmentManager(), "Date Picker");
+
+
             }
         });
     }

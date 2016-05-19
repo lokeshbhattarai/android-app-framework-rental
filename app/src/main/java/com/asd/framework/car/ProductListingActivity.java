@@ -52,6 +52,8 @@ public class ProductListingActivity extends AppCompatActivity {
         productList.add(mazdaCar1);
         productList.add(innova);
         productList.add(etos500);
+
+
     }
 
     private void initView() {

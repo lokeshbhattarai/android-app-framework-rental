@@ -12,14 +12,45 @@
         android:background="@drawable/white_corner_round_bg"
         android:text="Selected Product"/>
 
-    <!--Include Product Details -->
-    <include layout="@layout/item_product_details"/>
-
     <com.asd.framework.utils.HorizontalListView
         android:id="@+id/selectedProductList"
-        android:layout_width="480dp"
+        android:layout_width="match_parent"
         android:layout_height="175dp"
         android:layout_margin="@dimen/small_margin"
         />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/small_margin"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/TitleTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_corner_round_bg"
+            android:padding="@dimen/fab_margin"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Settled Final Bill" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/txtTotalBill"
+            style="@style/TitleTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/white_corner_round_bg"
+            android:gravity="center"
+            android:padding="@dimen/fab_margin"
+            android:text="$400"
+            android:textColor="@color/colorAccent"
+            android:textSize="56sp" />
+
+    </LinearLayout>
 
 </LinearLayout>
