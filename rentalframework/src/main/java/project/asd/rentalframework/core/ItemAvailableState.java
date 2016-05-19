@@ -1,5 +1,7 @@
 package project.asd.rentalframework.core;
 
+import android.util.Log;
+
 /**
  * Created by lokex on 5/17/16.
  */
@@ -11,20 +13,22 @@ public class ItemAvailableState implements ItemState{
         this.product = product;
     }
 
+
     @Override
-    public void proceed() {
-        product.setAvailable(true);
-    }
-/*
-    @Override
-    public void settle() {
-        product.setAvailable(true);
-        AppLogger.showLog("", "Item should be checkedout first to settle");
+    public boolean settle() {
+        Log.i("ItemAvailableState", "Item should be checkedout first to settle");
+        return false;
     }
 
     @Override
-    public void cancel(){
-        product.setAvailable(false);
+    public boolean checkout(){
+        product.setCurrentState(product.getCheckedoutState());
+        return true; //checkout successfully
     }
-    */
+
+    @Override
+    public boolean cancel(){
+        Log.i("ItemAvailableState", "Item is available");
+        return true;
+    }
 }

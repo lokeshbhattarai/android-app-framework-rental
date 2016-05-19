@@ -40,14 +40,14 @@ public class Transaction {
     public void cancelTransaction(){
         for(AbstractProduct product : checkedOutItems){
             ItemState availableState = new ItemAvailableState(product);
-            availableState.proceed();
+            availableState.cancel();
         }
     }
 
     public void finalizeTransaction(){
         for(AbstractProduct product : checkedOutItems){
             ItemState availableState = new ItemAvailableState(product);
-            availableState.proceed();
+            availableState.settle();
         }
     }
 }
