@@ -1,2 +1,2 @@
 # android-app-framework-rental
-Android app framework for rental system
+Android based mobile framework that can be used to developed application for rental systems like car or apartment rentals.
